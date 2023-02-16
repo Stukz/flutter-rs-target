@@ -5,6 +5,7 @@ import 'package:flutter_base_rootstrap/presentation/resources/locale/localize.da
 import 'package:flutter_base_rootstrap/presentation/themes/variants/light.dart';
 import 'package:flutter_base_rootstrap/presentation/ui/components/cookies.dart';
 import 'package:flutter_base_rootstrap/presentation/ui/pages/home/home_page.dart';
+import 'package:flutter_base_rootstrap/presentation/ui/pages/login/login_view.dart';
 import 'package:flutter_base_rootstrap/utils/globals.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -29,9 +30,7 @@ class MyApp extends StatelessWidget {
       ],
       initialRoute: '/',
       routes: {
-        '/': (context) => const Cookies(
-              child: HomePage(),
-            ),
+        '/': (context) => const Cookies(child: LoginView()),
       },
     );
   }
